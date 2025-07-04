@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Jogos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu">
+    <header>
+      <h1>Seja bem-vindo à Lista de Jogos</h1>
+      <h2>Escolha uma opção abaixo para começar</h2>
+    </header>
+
+    <main>
+      <section class="botoes-jogos">
+        <button onclick="jogoNumeroSecreto()">Adivinhe o Número Secreto</button>
+        <button onclick="jogoCalculoMedia()">Calcule a Média</button>
+        <button onclick="mostrarJogo()">Somar Números</button>
+      </section>
+
+      <section id="inputContainer">
+        <input type="number" id="numero1" placeholder="Digite o 1º número">
+        <input type="number" id="numero2" placeholder="Digite o 2º número">
+        <button id="btn-somar" onclick="somaNumeros()">Somar</button>
+      </section>
+
+      <div id="resultado"></div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
